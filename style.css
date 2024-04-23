@@ -1,0 +1,85 @@
+.between{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+h1{
+    display: inline;
+}
+form{
+    width: 40%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+input{
+    margin-bottom: 20px;
+    color: black;
+    width: 390px;
+    height: 30px;
+    border-radius: 15px;
+    border-color: red;
+    z-index: 1;
+}
+.last{
+    display: flex;
+    column-gap: 90px;
+}
+i{
+    border: 2px solid white;
+    inset: 0;
+    position: absolute;
+}
+body{
+    background-color: black;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.i1{
+   
+    border-radius: 65% 36% 48% 49%/59% 58% 56% 55%;
+    animation: clockwise 6s infinite;
+}
+.i2{
+    border-radius: 62% 75% 57% 62%/66% 77% 86% 95%;
+    animation: clockwise 6s infinite;
+}
+.i3{
+    border-radius: 63% 54% 64% 34%/67% 43% 35% 65%;
+    animation: anticlockwise 6s infinite;
+}
+@keyframes clockwise {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes anticlockwise {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+form:hover .i1{
+   border: 3px solid green;
+}
+form:hover .i2{
+    border:3px solid red;
+}
+form:hover .i3{
+    border:3px solid blue;
+}
